@@ -1,0 +1,257 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #f4631e;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.outline-btn,
+.login-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.signup-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.3)
+    ),
+    #000;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+
+.hero-content h1 span {
+  color: #fbbf24;
+  text-decoration: underline;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.primary-btn {
+  background: #f4631e;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #e45412;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #f4631e;
+}
+
+/* =========================
+   FEATURES / ROLE SECTION
+========================= */
+.features {
+  padding: 60px 40px;
+  background: #f1f5f9;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* FEATURE CARD */
+.feature-card {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.feature-card .primary-btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 18px;
+}
+
+/* =========================
+   SCHOOL PAGE HERO (OPTIONAL)
+========================= */
+.school-hero {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4)
+  );
+  color: white;
+  padding: 80px 40px;
+}
+
+.school-hero h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.school-hero p {
+  font-size: 18px;
+  max-width: 650px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .features {
+    padding: 40px 20px;
+  }
+}
