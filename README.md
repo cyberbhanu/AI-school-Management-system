@@ -1,5 +1,4 @@
-Perfect 👍
-Here is a professional, team-ready README.md you can copy–paste directly into your GitHub repository.
+
 
 🎓 AI School Management System (MERN)
 
